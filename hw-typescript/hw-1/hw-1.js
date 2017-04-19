@@ -37,10 +37,40 @@ var LightCar = (function (_super) {
     }
     return LightCar;
 }(Car));
-var carOne = new LightCar('Toyota', 12, 8);
-carOne.run();
-carOne.stop();
-carOne.wheels = 6;
-carOne.timeAcceleration = 1000;
-console.log(carOne);
+/**
+ * Class Truck Car
+ */
+var Truck = (function (_super) {
+    __extends(Truck, _super);
+    function Truck(mark, timeAcceleration, timeStop) {
+        var _this = _super.call(this, mark, timeAcceleration, timeStop) || this;
+        _this.wheels = 6;
+        return _this;
+    }
+    return Truck;
+}(Car));
+/**
+ * Class VolvoTruck Car
+ */
+var VolvoTruck = (function (_super) {
+    __extends(VolvoTruck, _super);
+    function VolvoTruck() {
+        var _this = _super.call(this, 'VolvoTruck', 25, 7) || this;
+        _this.wheels = 6;
+        return _this;
+    }
+    return VolvoTruck;
+}(Truck));
+var carLight = new LightCar('Toyota', 12, 8);
+carLight.run();
+carLight.stop();
+console.log(carLight);
+var carTruck = new Truck('MAN', 40, 15);
+carTruck.run();
+carTruck.stop();
+console.log(carTruck);
+var VolvoTruckCar = new VolvoTruck();
+VolvoTruckCar.run();
+VolvoTruckCar.stop();
+console.log(VolvoTruckCar);
 //# sourceMappingURL=hw-1.js.map

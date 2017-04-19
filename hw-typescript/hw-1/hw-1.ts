@@ -41,9 +41,45 @@ class LightCar extends Car {
   }
 }
 
-let carOne = new LightCar('Toyota', 12 , 8);
-carOne.run();
-carOne.stop();
-carOne.wheels = 6;
-carOne.timeAcceleration = 1000;
-console.log(carOne);
+/**
+ * Class Truck Car
+ */
+class Truck extends Car {
+  readonly wheels: number = 6;
+  readonly mark: string;
+  readonly timeAcceleration: number;
+  readonly timeStop: number;
+  
+  constructor(mark:string, timeAcceleration:number, timeStop:number){
+    super(mark, timeAcceleration, timeStop);
+  }
+}
+
+/**
+ * Class VolvoTruck Car
+ */
+class VolvoTruck extends Truck {
+  readonly wheels: number = 6;
+  readonly mark: string;
+  readonly timeAcceleration: number;
+  readonly timeStop: number;
+  
+  constructor(){
+    super('VolvoTruck', 25, 7);
+  }
+}
+
+let carLight = new LightCar('Toyota', 12 , 8);
+carLight.run();
+carLight.stop();
+console.log(carLight);
+
+let carTruck = new Truck('MAN', 40 , 15);
+carTruck.run();
+carTruck.stop();
+console.log(carTruck);
+
+let VolvoTruckCar = new VolvoTruck();
+VolvoTruckCar.run();
+VolvoTruckCar.stop();
+console.log(VolvoTruckCar);
