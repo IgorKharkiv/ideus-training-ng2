@@ -55,9 +55,7 @@ var Truck = (function (_super) {
 var VolvoTruck = (function (_super) {
     __extends(VolvoTruck, _super);
     function VolvoTruck() {
-        var _this = _super.call(this, 'VolvoTruck', 25, 7) || this;
-        _this.wheels = 6;
-        return _this;
+        return _super.call(this, 'VolvoTruck', 25, 7) || this;
     }
     return VolvoTruck;
 }(Truck));

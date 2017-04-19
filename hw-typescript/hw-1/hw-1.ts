@@ -32,38 +32,25 @@ abstract class Car implements CarInterface {
  */
 class LightCar extends Car {
   readonly wheels: number = 4;
-  readonly mark: string;
-  readonly timeAcceleration: number;
-  readonly timeStop: number;
   
   constructor(mark:string, timeAcceleration:number, timeStop:number){
     super(mark, timeAcceleration, timeStop);
   }
 }
-
 /**
  * Class Truck Car
  */
 class Truck extends Car {
   readonly wheels: number = 6;
-  readonly mark: string;
-  readonly timeAcceleration: number;
-  readonly timeStop: number;
-  
+
   constructor(mark:string, timeAcceleration:number, timeStop:number){
     super(mark, timeAcceleration, timeStop);
   }
 }
-
 /**
  * Class VolvoTruck Car
  */
-class VolvoTruck extends Truck {
-  readonly wheels: number = 6;
-  readonly mark: string;
-  readonly timeAcceleration: number;
-  readonly timeStop: number;
-  
+class VolvoTruck extends Truck {  
   constructor(){
     super('VolvoTruck', 25, 7);
   }
