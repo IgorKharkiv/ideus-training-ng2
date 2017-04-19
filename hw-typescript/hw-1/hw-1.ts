@@ -10,8 +10,8 @@ interface CarInterface {
  */
 abstract class Car implements CarInterface {
   protected mark: string;
-  public timeAcceleration: number;
-  public timeStop: number;
+  protected timeAcceleration: number;
+  protected timeStop: number;
 
   constructor(mark:string, timeAcceleration:number, timeStop:number) {
     this.mark = mark;
