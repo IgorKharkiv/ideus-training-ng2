@@ -60,15 +60,9 @@ var VolvoTruck = (function (_super) {
     return VolvoTruck;
 }(Truck));
 var carLight = new LightCar('Toyota', 12, 8);
-carLight.run();
-carLight.stop();
 console.log(carLight);
 var carTruck = new Truck('MAN', 40, 15);
-carTruck.run();
-carTruck.stop();
 console.log(carTruck);
 var VolvoTruckCar = new VolvoTruck();
-VolvoTruckCar.run();
-VolvoTruckCar.stop();
 console.log(VolvoTruckCar);
 //# sourceMappingURL=hw-1.js.map

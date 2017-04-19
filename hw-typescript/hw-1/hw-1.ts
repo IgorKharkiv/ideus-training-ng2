@@ -57,16 +57,10 @@ class VolvoTruck extends Truck {
 }
 
 let carLight = new LightCar('Toyota', 12 , 8);
-carLight.run();
-carLight.stop();
 console.log(carLight);
 
 let carTruck = new Truck('MAN', 40 , 15);
-carTruck.run();
-carTruck.stop();
 console.log(carTruck);
 
 let VolvoTruckCar = new VolvoTruck();
-VolvoTruckCar.run();
-VolvoTruckCar.stop();
 console.log(VolvoTruckCar);
