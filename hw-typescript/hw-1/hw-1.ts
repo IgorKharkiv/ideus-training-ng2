@@ -1,3 +1,6 @@
+/**
+ * Interface Car
+ */
 interface CarInterface {
   mark: string;
   wheels: number;
@@ -7,7 +10,9 @@ interface CarInterface {
   run();
   stop();
 }
-
+/**
+ * Abstract Class Car
+ */
 abstract class Car implements CarInterface {
   public mark: string;
   public timeAcceleration: number;
@@ -28,7 +33,9 @@ abstract class Car implements CarInterface {
     console.log(`Time stop ${this.timeStop}`);
   }
 }
-
+/**
+ * Class Light Car
+ */
 class LightCar extends Car {
   wheels: number = 4;
   mark: string;
