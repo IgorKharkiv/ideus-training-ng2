@@ -2,11 +2,6 @@
  * Interface Car
  */
 interface CarInterface {
-  mark: string;
-  wheels: number;
-  timeAcceleration: number;
-  timeStop: number;
-
   run();
   stop();
 }
@@ -14,10 +9,9 @@ interface CarInterface {
  * Abstract Class Car
  */
 abstract class Car implements CarInterface {
-  public mark: string;
+  protected mark: string;
   public timeAcceleration: number;
   public timeStop: number;
-  public wheels: number;
 
   constructor(mark:string, timeAcceleration:number, timeStop:number) {
     this.mark = mark;
@@ -37,10 +31,10 @@ abstract class Car implements CarInterface {
  * Class Light Car
  */
 class LightCar extends Car {
-  wheels: number = 4;
-  mark: string;
-  timeAcceleration: number;
-  timeStop: number;
+  readonly wheels: number = 4;
+  readonly mark: string;
+  readonly timeAcceleration: number;
+  readonly timeStop: number;
   
   constructor(mark:string, timeAcceleration:number, timeStop:number){
     super(mark, timeAcceleration, timeStop);
@@ -50,4 +44,6 @@ class LightCar extends Car {
 let carOne = new LightCar('Toyota', 12 , 8);
 carOne.run();
 carOne.stop();
+carOne.wheels = 6;
+carOne.timeAcceleration = 1000;
 console.log(carOne);

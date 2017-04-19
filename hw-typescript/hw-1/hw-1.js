@@ -8,6 +8,9 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+/**
+ * Abstract Class Car
+ */
 var Car = (function () {
     function Car(mark, timeAcceleration, timeStop) {
         this.mark = mark;
@@ -22,6 +25,9 @@ var Car = (function () {
     };
     return Car;
 }());
+/**
+ * Class Light Car
+ */
 var LightCar = (function (_super) {
     __extends(LightCar, _super);
     function LightCar(mark, timeAcceleration, timeStop) {
@@ -34,5 +40,7 @@ var LightCar = (function (_super) {
 var carOne = new LightCar('Toyota', 12, 8);
 carOne.run();
 carOne.stop();
+carOne.wheels = 6;
+carOne.timeAcceleration = 1000;
 console.log(carOne);
 //# sourceMappingURL=hw-1.js.map
