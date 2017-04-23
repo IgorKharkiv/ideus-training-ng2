@@ -2,16 +2,18 @@
 abstract class Car {
 
   readonly mark: string;
-  readonly wheels: number;
+  private wheels: number;
   readonly timeTo_100: number;
   readonly timeTo_0: number;
 
 
-  constructor( _mark: string, _timeTo_100: number, _timeTo_0: number, readonly _wheels: number){
+  constructor( _mark: string, _timeTo_100: number, _timeTo_0: number, _wheels: number){
+
     this.mark = _mark;
     this.wheels = _wheels;
     this.timeTo_100 = _timeTo_100;
     this.timeTo_0 = _timeTo_0;
+
   }
 
   run(){
@@ -32,8 +34,7 @@ abstract class Car {
 class LightCar extends Car{
 
   constructor(_mark: string, _timeTo_100: number, _timeTo_0: number){
-    let wheels = 4;
-    super(_mark, _timeTo_100, _timeTo_0, wheels);
+    super(_mark, _timeTo_100, _timeTo_0, 4);
   }
 
 }
@@ -42,9 +43,7 @@ class LightCar extends Car{
 class Truck extends Car{
 
   constructor(_mark: string, _timeTo_100: number, _timeTo_0: number){
-    let wheels = 6;
-    super(_mark, _timeTo_100, _timeTo_0, wheels);
-
+    super(_mark, _timeTo_100, _timeTo_0, 6);
   }
 
 }
