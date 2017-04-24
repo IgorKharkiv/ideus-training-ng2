@@ -1,54 +1,60 @@
-<div class="layout-wrapper">
+<div class="layout">
   
   <!-- Header -->
   <header class="layout-header">
-
-    <nav class="navigation-header">
-      <ul class="navigation-header-list">
-        <li class="navigation-header-item">
-          <a class="navigation-header-link" routerLink="/home" routerLinkActive="active">Home</a>
-        </li>
-        <li class="navigation-header-item">
-          <a class="navigation-header-link" routerLink="/about-us" routerLinkActive="active">About Us</a>
-        </li>
-        <li class="navigation-header-item">
-          <a class="navigation-header-link" routerLink="/products" routerLinkActive="active">Products</a>
-        </li>
-        <li class="navigation-header-item">
-          <a class="navigation-header-link" routerLink="/contact-us" routerLinkActive="active">Contact Us</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="layout-wrapper">
+      
+      <nav class="navigation-header">
+        <ul class="navigation-header-list">
+          <li class="navigation-header-item">
+            <a class="navigation-header-link" routerLink="/home" routerLinkActive="active">Home</a>
+          </li>
+          <li class="navigation-header-item">
+            <a class="navigation-header-link" routerLink="/about-us" routerLinkActive="active">About Us</a>
+          </li>
+          <li class="navigation-header-item">
+            <a class="navigation-header-link" routerLink="/products" routerLinkActive="active">Products</a>
+          </li>
+          <li class="navigation-header-item">
+            <a class="navigation-header-link" routerLink="/contact-us" routerLinkActive="active">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
     
+    </div>
   </header>
   <!-- Header End -->
 
   <!-- Content -->
   <main class="layout-content">
-    <router-outlet></router-outlet>
+    <div class="layout-wrapper">
+      <router-outlet></router-outlet>
+    </div>
   </main>
   <!-- Content End -->
 
   <!-- Footer -->
   <footer class="layout-footer">
+    <div class="layout-wrapper">
 
-    <nav class="navigation-footer">
-      <ul class="navigation-footer-list">
-        <li class="navigation-footer-item">
-          <a class="navigation-footer-link" routerLink="/home" routerLinkActive="active">Home</a>
-        </li>
-        <li class="navigation-footer-item">
-          <a class="navigation-footer-link" routerLink="/about-us" routerLinkActive="active">About Us</a>
-        </li>
-        <li class="navigation-footer-item">
-          <a class="navigation-footer-link" routerLink="/products" routerLinkActive="active">Products</a>
-        </li>
-        <li class="navigation-footer-item">
-          <a class="navigation-footer-link" routerLink="/contact-us" routerLinkActive="active">Contact Us</a>
-        </li>
-      </ul>
-    </nav>
+      <nav class="navigation-footer">
+        <ul class="navigation-footer-list">
+          <li class="navigation-footer-item">
+            <a class="navigation-footer-link" routerLink="/home" routerLinkActive="active">Home</a>
+          </li>
+          <li class="navigation-footer-item">
+            <a class="navigation-footer-link" routerLink="/about-us" routerLinkActive="active">About Us</a>
+          </li>
+          <li class="navigation-footer-item">
+            <a class="navigation-footer-link" routerLink="/products" routerLinkActive="active">Products</a>
+          </li>
+          <li class="navigation-footer-item">
+            <a class="navigation-footer-link" routerLink="/contact-us" routerLinkActive="active">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
 
+    </div>
   </footer>
   <!-- Footer End -->
 

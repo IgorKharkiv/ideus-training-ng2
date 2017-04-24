@@ -1,2 +1,5 @@
 <h1>{{title}}</h1>
-<p>{{text}}</p>
+<div class="clearfix">
+  <img class="img img-right" src={{image}} alt="About Us image">
+  <p *ngFor="let paragraph of text">{{paragraph}}</p>
+</div>

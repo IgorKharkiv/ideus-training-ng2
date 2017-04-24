@@ -6,11 +6,17 @@ body {
 }
 
 /* Layout */
-.layout-wrapper {
+.layout {
   display: flex;
   flex-direction: column;
   align-content: stretch;
   min-height: 100vh;
+}
+.layout-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 .layout-header {
   flex: 0 0 auto;
@@ -136,6 +142,12 @@ h1, h2, h3, h4, h5, h6 {
   &:first-child { margin-top: 0; }
   &:last-child { margin-bottom: 0; }
 }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.3rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; text-transform: uppercase; }
 ul, ol, p {
   margin: 0 0 15px;
 
@@ -148,4 +160,19 @@ a {
   &:hover {
     text-decoration: underline;
   }
+}
+
+/* Images */
+.img {
+  display: block;
+  max-width: 100%;
+  width: 400px;
+}
+.img-right { float: right; margin: 0 0 15px 30px; }
+.img-center { float: none; margin: 0 auto 15px; }
+.img-left { float: left; margin: 0 30px 15px 0; }
+
+/* Other */
+.clearfix {
+  overflow: hidden;
 }
