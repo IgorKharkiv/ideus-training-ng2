@@ -5,9 +5,19 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
+import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { ContactUsComponent } from './pages/contact-us/contact-us.component';
+import { HomeComponent } from './pages/home/home.component';
+import { ProductsComponent } from './pages/products/products.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    
+    AboutUsComponent,
+    ContactUsComponent,
+    HomeComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
