@@ -13,7 +13,6 @@ import { ProductsComponent } from './pages/products/products.component';
 @NgModule({
   declarations: [
     AppComponent,
-
     AboutUsComponent,
     ContactUsComponent,
     HomeComponent,
