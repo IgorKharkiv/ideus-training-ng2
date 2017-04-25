@@ -13,6 +13,9 @@ import { ProductsComponent } from './pages/products/products.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 
+// import google map component
+import { AgmCoreModule } from 'angular2-google-maps/core';
+
 // array of routes
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -33,7 +36,10 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDJyC36o1kkhuHlsOMT_H4-nvuEKnynb4I'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
