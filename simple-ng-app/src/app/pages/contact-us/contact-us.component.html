@@ -1,2 +1,10 @@
 <h1>{{title}}</h1>
 <p>{{text}}</p>
+<div>{{map.lat}} {{map.lng}}</div>
+<sebm-google-map [latitude]="map.markers[0].lat" [longitude]="map.markers[0].lng" [zoom]="map.zoom" (mapClick)="map.mapClick(e)">
+	<sebm-google-map-marker *ngFor="let marker of map.markers" [latitude]="marker.lat" [longitude]="marker.lng">
+		<sebm-google-map-info-window [disableAutoPan]="true">
+         {{marker.info}}
+       </sebm-google-map-info-window>
+	</sebm-google-map-marker>
+</sebm-google-map>

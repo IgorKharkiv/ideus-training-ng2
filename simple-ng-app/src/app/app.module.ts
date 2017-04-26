@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
+import { AgmCoreModule } from 'angular2-google-maps/core';
 
 // Bootstrap:
 import { AppComponent } from './app.component';
@@ -38,7 +39,10 @@ const appRoutes: Routes = [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDgKVadmUIo9gxo76iF2uAGbKEvA2KoLnA'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -3,7 +3,6 @@ import { Component } from '@angular/core';
 
 // Declaration:
 @Component({
-  selector: 'app-root',
   templateUrl: './about-us.component.html',
   styleUrls: ['./about-us.component.scss']
 })
