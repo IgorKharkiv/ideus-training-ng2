@@ -13,7 +13,7 @@ import { Navigation } from './navigation/navigation.component';
 
 const appRoutes = [
   {
-    path: '',
+    path: 'home',
     component: Home
   },
   {
