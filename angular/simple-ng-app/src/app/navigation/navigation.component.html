@@ -1,14 +1,5 @@
 <ul class="nav">
-  <li>
-    <a routerLink="home" routerLinkActive="current">Home</a>
-  </li>
-  <li>
-    <a routerLink="about" routerLinkActive="current">About Us</a>
-  </li>
-  <li>
-    <a routerLink="contact" routerLinkActive="current">Contact Us</a>
-  </li>
-  <li>
-    <a routerLink="products" routerLinkActive="current">Products</a>
+  <li *ngFor="let route of routes">
+    <a routerLink="{{route.path}}" routerLinkActive="current">{{route.title}}</a>
   </li>
 </ul>

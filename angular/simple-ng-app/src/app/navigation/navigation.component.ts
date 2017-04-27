@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { appRoutes } from '../routes';
 
 @Component({
     selector: 'navigation',
@@ -6,4 +7,10 @@ import { Component } from '@angular/core';
     styleUrls: ['./navigation.component.css']
 })
 export class Navigation {
+
+    routes: any;
+
+    constructor() {
+        this.routes = appRoutes;
+    }
 }

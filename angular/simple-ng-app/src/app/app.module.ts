@@ -10,25 +10,7 @@ import { About } from './pages/about/about.component';
 import { Contact } from './pages/contact/contact.component';
 import { Products } from './pages/products/products.component';
 import { Navigation } from './navigation/navigation.component';
-
-const appRoutes = [
-  {
-    path: 'home',
-    component: Home
-  },
-  {
-    path: 'about',
-    component: About
-  },
-  {
-    path: 'contact',
-    component: Contact
-  },
-  {
-    path: 'products',
-    component: Products
-  }
-];
+import { appRoutes } from './routes';
 
 @NgModule({
   declarations: [
