@@ -9,6 +9,9 @@ import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProductsComponent } from './pages/products/products.component';
+import { NavigationComponent } from "./navigation/navigation.component";
+/* ROUTES */
+import { appRoutes } from './routes';
 
 @NgModule({
   declarations: [
@@ -16,19 +19,14 @@ import { ProductsComponent } from './pages/products/products.component';
     AboutUsComponent,
     ContactUsComponent,
     HomeComponent,
-    ProductsComponent
+    ProductsComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot([
-      { path: "", redirectTo: "home", pathMatch: "full" },
-      { path: "home", component: HomeComponent },
-      { path: "products", component: ProductsComponent },
-      { path: "about-us", component: AboutUsComponent },
-      { path: "contact-us", component: ContactUsComponent },
-    ])
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
