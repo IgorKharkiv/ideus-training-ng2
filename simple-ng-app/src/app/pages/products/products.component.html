@@ -1,1 +1,13 @@
 <h1>Products</h1>
+<!--<pre>{{ products | json }}</pre>-->
+
+<!-- PRODUCTS LIST -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4" *ngFor="let product of products">
+            <product [product]="product"></product>
+        </div>
+    </div>
+</div>
+
+

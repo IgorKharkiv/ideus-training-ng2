@@ -9,9 +9,12 @@ import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProductsComponent } from './pages/products/products.component';
+import { ProductComponent } from './product/product.component';
 import { NavigationComponent } from "./navigation/navigation.component";
 /* ROUTES */
 import { appRoutes } from './routes';
+/* SERVICES */
+import { ProductService } from "./pages/products/product.service";
 
 @NgModule({
   declarations: [
@@ -20,7 +23,8 @@ import { appRoutes } from './routes';
     ContactUsComponent,
     HomeComponent,
     ProductsComponent,
-    NavigationComponent
+    NavigationComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +32,7 @@ import { appRoutes } from './routes';
     HttpModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
