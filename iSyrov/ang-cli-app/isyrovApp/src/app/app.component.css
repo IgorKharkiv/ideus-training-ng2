@@ -2,22 +2,3 @@
   padding: 20px 0;
   border-top: 1px solid #b9b9b9;
 }
-.menu{
-  padding: 0;
-}
-.menu-item{
-  list-style: none;
-  display: inline-block;
-  margin-right: 10px;
-}
-.menu-link{
-  color: #000;
-  font-size: 24px;
-  text-decoration: none;
-}
-.menu-link:hover{
-  opacity: 0.7;
-}
-.menu-link.active{
-  color: #006fbd;
-}

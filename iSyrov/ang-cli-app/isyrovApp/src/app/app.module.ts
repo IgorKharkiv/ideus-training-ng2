@@ -6,6 +6,9 @@ import { HttpModule } from '@angular/http';
 // import route modules
 import { RouterModule, Routes } from '@angular/router';
 
+// import page parts
+import { NavigationComponent } from './page-parts/navigation/navigation.component';
+
 //import page components
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -15,9 +18,11 @@ import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 
 // import google map component
 import { AgmCoreModule } from 'angular2-google-maps/core';
+import { ProductItemComponent } from './page-parts/product-item/product-item.component';
 
 // array of routes
 const appRoutes: Routes = [
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'products', component: ProductsComponent },
   { path: 'about-us', component: AboutUsComponent },
@@ -30,7 +35,9 @@ const appRoutes: Routes = [
     HomeComponent,
     ProductsComponent,
     AboutUsComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    NavigationComponent,
+    ProductItemComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
@@ -42,6 +49,6 @@ const appRoutes: Routes = [
     })
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }
