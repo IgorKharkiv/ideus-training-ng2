@@ -9,12 +9,12 @@ import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProductsComponent } from './pages/products/products.component';
-import { ProductComponent } from './product/product.component';
-import { NavigationComponent } from "./navigation/navigation.component";
+import { ProductComponent } from './components/product/product.component';
+import { NavigationComponent } from "./components/navigation/navigation.component";
 /* ROUTES */
 import { appRoutes } from './routes';
 /* SERVICES */
-import { ProductService } from "./pages/products/product.service";
+import { ProductService } from "./services/product.service";
 
 @NgModule({
   declarations: [

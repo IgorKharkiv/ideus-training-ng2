@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { appRoutes } from '../routes';
+import { appRoutes } from '../../routes';
 
 @Component({
     selector: 'navigation',
