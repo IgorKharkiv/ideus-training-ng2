@@ -20,6 +20,9 @@ import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { AgmCoreModule } from 'angular2-google-maps/core';
 import { ProductItemComponent } from './page-parts/product-item/product-item.component';
 
+// import services
+import { ProductListService } from './services/product-list.service';
+
 // array of routes
 const appRoutes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -48,7 +51,7 @@ const appRoutes: Routes = [
       apiKey: 'AIzaSyDJyC36o1kkhuHlsOMT_H4-nvuEKnynb4I'
     })
   ],
-  providers: [],
+  providers: [ ProductListService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
