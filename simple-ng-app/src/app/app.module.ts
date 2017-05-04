@@ -12,7 +12,10 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { ProductsComponent } from './pages/products/products.component';
+import { ProductCardComponent } from './pages/products//product-card.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
+
+import { NavigationComponent } from './components/navigation/navigation.component';
 
 
 // Routes:
@@ -33,7 +36,9 @@ const appRoutes: Routes = [
     HomeComponent,
     AboutUsComponent,
     ProductsComponent,
-    ContactUsComponent
+    ProductCardComponent,
+    ContactUsComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,

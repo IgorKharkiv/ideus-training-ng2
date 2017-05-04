@@ -1,0 +1,58 @@
+/* Header Navigation */
+.navigation-header {
+  font-size: 16px;
+  color: #fff;
+
+  // Nested:
+  &-list {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  &-item {}
+  &-link {
+    position: relative;
+    display: block;
+    padding: 20px 10px;
+    color: inherit;
+    text-decoration: none;
+    overflow: hidden;
+
+    // Decoration:
+    &:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: block;
+      border-top: 2px solid rgba(255,255,255,0.5);
+      transform: translateY(100%);
+      transition: transform 0.2s ease-in-out 0s;
+    }
+
+    // States:
+    &:hover {
+      text-decoration: none;
+
+      &:after {
+        transform: translateY(0);
+      }
+    }
+    &:focus {
+      outline: 1px dotted rgba(255,255,255,0.5);
+      outline-offset: 1px;
+    }
+
+    &.active {
+
+      &:after {
+        border-top-color: rgba(255,255,255,1);
+        transform: translateY(0);
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+<div class="product-card">
+	<div class="product-card-image">
+		<img src={{image}} alt="Product image" />
+	</div>
+	<div class="product-card-inner">
+		<div class="product-card-title">{{title[0].toUpperCase() + title.slice(1)}}</div>
+		<div class="product-card-descr">{{descr.slice(0, 37).trim() + '...'}}</div>
+		<div class="product-card-price">{{price}}</div>
+		<div class="product-card-tags">
+			<span *ngFor="let tag of tags">{{tag}}</span>
+		</div>
+		<a class="product-card-link" href="#">View more</a>
+	</div>
+	<div class="product-card-state" [ngClass]="{'state-active': state, 'state-inactive': !state}">{{state ? 'Active' : 'Inactive'}}</div>
+</div>
